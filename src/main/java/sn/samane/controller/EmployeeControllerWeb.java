@@ -3,7 +3,6 @@ package sn.samane.controller;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.access.prepost.PostAuthorize;
 import org.springframework.stereotype.Controller;
@@ -75,7 +74,7 @@ public class EmployeeControllerWeb {
                 return "error/500";
             }
         }
-        return "error";
+        return "error/error";
     }
 
     @GetMapping("/logout")

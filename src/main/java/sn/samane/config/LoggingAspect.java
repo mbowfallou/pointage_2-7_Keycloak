@@ -16,7 +16,6 @@ import java.util.Arrays;
 @Slf4j
 public class LoggingAspect {
 
-
     /**
      * Pointcut that matches Web REST endpoints.
      */
